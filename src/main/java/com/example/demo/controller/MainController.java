@@ -15,16 +15,13 @@ import com.example.demo.model.Mutter;
 import com.example.demo.model.PostMutterService;
 import com.example.demo.model.User;
 
+import lombok.RequiredArgsConstructor;
+
 @Controller
+@RequiredArgsConstructor
 public class MainController {
   private final GetMutterListService getMutterListService;
   private final PostMutterService postMutterService;
-
-  public MainController(GetMutterListService getMutterListService, PostMutterService postMutterService) {
-    this.getMutterListService = getMutterListService;
-    this.postMutterService = postMutterService;
-  }
-
   @GetMapping("/Main")
   public String showMain(HttpServletRequest request, HttpSession session) {
     // つぶやきリストを取得して、リクエストスコープに保存
