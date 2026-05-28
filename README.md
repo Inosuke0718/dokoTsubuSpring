@@ -1,11 +1,22 @@
-# Spring 版 どこつぶ (`dokoTsubuSpring`)の注意点
+# Spring版「どこつぶ（dokoTsubuSpring）」の注意点
 
-## 1. ⚠️ 公式ソースコードの不足ファイル
+## 1. 公式ソースコードに不足しているファイル
 
-公式GitHubリポジトリ（https://github.com/miyabilink/sukkiri-servlet5-codes/tree/main/dokoTsubuSpring）には、Web付録（ビューにJSPを使用する設定：https://sukkiri.jp/books/sukkiri_servlet5/sukkiri_servlet5_appendix/ssj5-spring-jsp-setting.html）で指示されている以下の2ファイルが含まれていません。プロジェクト作成時にご自身で設定を追加する必要があります。
+公式GitHubリポジトリの `dokoTsubuSpring` には、Web付録で案内されている一部の設定ファイルが含まれていません。
 
-- **`pom.xml`**
-- **`application.properties`**
+そのため、Spring版「どこつぶ」を作成する際は、以下のファイルを自分で追加・設定する必要があります。
+
+* `pom.xml`
+* `application.properties`
+
+参考：
+
+* 公式GitHubリポジトリ
+  https://github.com/miyabilink/sukkiri-servlet5-codes/tree/main/dokoTsubuSpring
+
+* Web付録：ビューにJSPを使用する設定
+  https://sukkiri.jp/books/sukkiri_servlet5/sukkiri_servlet5_appendix/ssj5-spring-jsp-setting.html
+
 
 ## 🌐 `http://localhost:8080/` の404エラー回避策
 
